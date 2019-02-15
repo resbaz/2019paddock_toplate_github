@@ -9,7 +9,7 @@ You will need to download the "Respitch_Notebook_V6-Helper_Version.ipynb", The "
 **Libraries required:** Numpy and urrlib3
 
 
-##### Beautiful Soup Respitch Resleads
+## If you are helping at the Beautiful Soup Respitch
 
 You will need to download the "beautiful soup notebook Res_Pitch.ipynb" and the "beautiful soup notebook Res_Pitch-Challenge.ipynb" 
 

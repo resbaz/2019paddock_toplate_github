@@ -1,6 +1,6 @@
 # 2019paddock_toplate_github
 
-## Resleads, these are jupyter notebooks for both the Whython Python presentation ,and the Beautiful Soup Presentation
+## Resleads, these are jupyter notebooks for both the Whython Python presentation and the Beautiful Soup Presentation
 
 ### If you are helping at a Whython Presentation
 

@@ -7,16 +7,12 @@ Functions for Jonathan Garber's Respitch
 """
 
 #helpers run this before every tutorial
-import urllib3
-import certifi
 import itertools
 import numpy as np
+import enchant
 
 # import word list
-http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',ca_certs=certifi.where())
-target_url = "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt"
-r = http.request('GET',target_url)
-wordlist = str(r.data.decode('utf-8')).split('\r\n')
+word_lookup = enchant.Dict("en_au")
 
 import string
 alphabet = string.ascii_letters
@@ -28,14 +24,10 @@ def printmd(string):
 
 ### Here we make a function that tells us whether or not its an english word
 
-english_words = set(word.strip().lower() for word in wordlist)
 def is_english_word(word):
-
-    if word.lower() in english_words:
+    if word_lookup.check(word.lower()):
         print('"'+word + '" is a word')
         return
-
-
     else:
         return
 
@@ -126,8 +118,4 @@ def interact_drug_data():
     from ipywidgets import interact, fixed
     # all we need to do is specify here what function we are interacting with
     interact(drug_plot, drug = an_epic_party, drug_use = fixed(drug_use))
-
-
-
-    
     

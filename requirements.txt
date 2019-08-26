@@ -1,2 +1,2 @@
-numpy==0.17.*
+numpy==0.*
 pyenchant==0.1.*

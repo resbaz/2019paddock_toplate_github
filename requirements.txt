@@ -1,2 +1,2 @@
-numpy==0.*
-pyenchant==0.1.*
+numpy==1.*
+pyenchant==2.*
